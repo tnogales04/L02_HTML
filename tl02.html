@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller L02</title>
+</head>
+
+<body>
+    <header>
+        <h1>Taller L02: Página de Animales por Categoría</h1>
+        <p><strong>Objetivo:</strong> Utilizar etiquetas HTML semánticas y de contenido para estructurar una página que
+            clasifique animales según su dieta, basándose en la estructura de <code>index.html</code>.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Instrucciones del Ejercicio</h2>
+            <p>Crea un nuevo archivo llamado <code>animales.html</code> y sigue los pasos a continuación. Deberás crear
+                una carpeta <code>recursos/animales/</code> y descargar allí imágenes de los animales que elijas.</p>
+            <ol>
+                <li>
+                    <strong>Paso 1: Estructura Base</strong><br>
+                    Crea la estructura fundamental del documento HTML (<code>&lt;!DOCTYPE html&gt;</code>,
+                    <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>) y asigna un título
+                    a la página.
+                </li>
+                <li>
+                    <strong>Paso 2: Encabezado Principal</strong><br>
+                    Dentro del <code>&lt;body&gt;</code>, añade un <code>&lt;header&gt;</code> con un título principal
+                    <code>&lt;h1&gt;</code> que diga "Animales del Mundo".
+                </li>
+                <li>
+                    <strong>Paso 3: Contenido Principal y Categorías</strong><br>
+                    Define la sección <code>&lt;main&gt;</code>. Dentro, crea tres secciones
+                    (<code>&lt;section&gt;</code>) para las categorías de animales. Cada sección debe tener un subtítulo
+                    <code>&lt;h2&gt;</code>:
+                    <ul>
+                        <li>Carnívoros</li>
+                        <li>Herbívoros</li>
+                        <li>Omnívoros</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Paso 4: Añadir Imágenes de Animales</strong><br>
+                    Dentro de cada sección, añade al menos dos imágenes (<code>&lt;img&gt;</code>) de animales que
+                    correspondan a esa categoría. Asegúrate de:
+                    <ul>
+                        <li>Usar rutas relativas correctas (ej: <code>./recursos/animales/leon.png</code>).</li>
+                        <li>Incluir un texto alternativo (<code>alt</code>) descriptivo para cada imagen.</li>
+                        <li>Asignar un ancho (<code>width</code>) de "128" para mantener la consistencia visual.</li>
+                        <li>Separar las imágenes con saltos de línea (<code>&lt;br&gt;</code>).</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Paso 5: Pie de Página</strong><br>
+                    Finalmente, crea un <code>&lt;footer&gt;</code> y añade un párrafo (<code>&lt;p&gt;</code>) con
+                    información de copyright o la fuente de las imágenes.
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Solución Propuesta</h2>
+            <p>A continuación se muestra el código HTML completo como una posible solución al ejercicio propuesto
+                (archivo <code>animales.html</code>).</p>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Animales del Mundo&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;h1&gt;Animales del Mundo&lt;/h1&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section&gt;
+            &lt;h2&gt;Carnívoros&lt;/h2&gt;
+            &lt;img src="./recursos/animales/leon.png" alt="Icono de un león" width="128"&gt;
+            &lt;br&gt;
+            &lt;img src="./recursos/animales/tigre.png" alt="Icono de un tigre" width="128"&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Herbívoros&lt;/h2&gt;
+            &lt;img src="./recursos/animales/elefante.png" alt="Icono de un elefante" width="128"&gt;
+            &lt;br&gt;
+            &lt;img src="./recursos/animales/jirafa.png" alt="Icono de una jirafa" width="128"&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;Omnívoros&lt;/h2&gt;
+            &lt;img src="./recursos/animales/oso.png" alt="Icono de un oso" width="128"&gt;
+            &lt;br&gt;
+            &lt;img src="./recursos/animales/cerdo.png" alt="Icono de un cerdo" width="128"&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 Animales del Mundo. Imágenes de Flaticon.&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </section>
+    </main>
+</body>
+
+</html>
